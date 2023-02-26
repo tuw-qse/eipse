@@ -1,0 +1,7 @@
+delta DSC_70(robotInstances);
+uses ShiftForkCaseStudyApp;
+
+{
+	<Add> FB name=SC_70_1 type=SC_70;
+	<Copy> NetworkElement name=SC_70_1 instances=robotInstances includeOriginal;
+}

@@ -1,0 +1,28 @@
+features
+        shiftfork_variability_resource {extended__ true, abstract true}
+                mandatory
+                        Linefeeds {deltaFile "", abstract true}
+                                optional
+                                        LF_4 {deltaFile "DLF_4(desiredCardinality)", InstanceNum "1..100"}
+                                        LF_3 {deltaFile "DLF_3(desiredCardinality)", InstanceNum "1..100"}
+                        ScrewingRobots {deltaFile "", abstract true}
+                                optional
+                                        SC_70 {deltaFile "DSC_70(desiredCardinality)", InstanceNum "1..100"}
+                        WeldingRobots {deltaFile "", abstract true}
+                                optional
+                                        LaserWeldingRobots {deltaFile "", abstract true}
+                                                optional
+                                                        LaserWeldingRobot_01 {deltaFile "DLaserWeldingRobot01(desiredCardinality)", InstanceNum "1..100"}
+                                        UltrasonicWeldingRobots {deltaFile "", abstract true}
+                                                optional
+                                                        UltrasonicWeldingRobot_16 {deltaFile "DUltrasonicWeldingRobot16(desiredCardinality)", InstanceNum "1..100"}
+                        PressinRobots {deltaFile "", abstract true}
+                                optional
+                                        SmallPartsPressinRobots {deltaFile "", abstract true}
+                                                optional
+                                                        PR_05 {deltaFile "DPR_05(desiredCardinality)", InstanceNum "1..100"}
+                                        MediumPartsPressinRobots {deltaFile "", abstract true}
+                                                optional
+                                                        PR_04 {deltaFile "DPR_04(desiredCardinality)", InstanceNum "1..100"}
+                                                        PR_12 {deltaFile "DPR_12(desiredCardinality)", InstanceNum "1..100"}
+

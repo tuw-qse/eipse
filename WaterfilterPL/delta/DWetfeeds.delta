@@ -1,0 +1,7 @@
+delta DWetfeeds(batchInstances);
+uses Application;
+
+{
+	<Add> FB name=Wetfeeds type=Wetfeeds;
+	<Copy> NetworkElement name=Wetfeeds instances=batchInstances includeOriginal;
+}

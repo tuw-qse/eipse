@@ -1,0 +1,8 @@
+delta DChangeover1;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertChangeover1;
+	<Remove> NetworkElement name=E_REND_PCOver1;
+	<Remove> NetworkElement name=PressChangeover1;
+}

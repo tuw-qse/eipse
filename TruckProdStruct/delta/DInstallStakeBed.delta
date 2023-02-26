@@ -1,0 +1,11 @@
+delta DInstallStakeBed;
+uses TruckCaseStudyApp;
+
+{
+	<Remove> NetworkElement name=InstallDumper;
+	<Remove> NetworkElement name=InstallOpenTop;
+	<Remove> NetworkElement name=InstallTank;
+	<Remove> NetworkElement name=E_REND_Dumper;
+	<Remove> NetworkElement name=E_REND_OpenTop;
+	<Remove> NetworkElement name=E_REND_Tank;
+}

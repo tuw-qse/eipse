@@ -1,0 +1,7 @@
+delta DDFL651FZ(runnerInstances);
+uses Application;
+
+{
+	<Add> FB name=DFL651FZ type=HandheldNutrunner_DFL651FZ;
+	<Copy> NetworkElement name=DFL651FZ instances=runnerInstances includeOriginal;
+}

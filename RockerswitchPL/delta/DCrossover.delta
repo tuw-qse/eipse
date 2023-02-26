@@ -1,0 +1,8 @@
+delta DCrossover;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertCrossover;
+	<Remove> NetworkElement name=E_REND_PXOver;
+	<Remove> NetworkElement name=PressCrossover;
+}

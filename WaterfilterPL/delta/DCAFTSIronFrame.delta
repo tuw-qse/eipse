@@ -1,0 +1,6 @@
+delta DCAFTSIronFrame;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedCAFilterTankSModuleIronFrame;
+}

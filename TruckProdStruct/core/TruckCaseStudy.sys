@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="TruckCaseStudy" Comment="">
+	<VersionInfo Version="1.0" Author="AK124017" Date="2022-12-15">
+	</VersionInfo>
+	<Application Name="TruckCaseStudyApp" Comment="">
+		<SubAppNetwork>
+			<FB Name="InsertChassis" Type="InsertProduct" Comment="" x="400.0" y="4120.0">
+				<Parameter Name="ProductType" Value="'Chassis'"/>
+			</FB>
+			<FB Name="InsertCabin" Type="InsertProduct" Comment="" x="2800.0" y="3060.0">
+				<Parameter Name="ProductType" Value="'Cabin'"/>
+			</FB>
+			<FB Name="InstallOpenTop" Type="InstallProduct" Comment="" x="8400.0" y="5200.0">
+				<Parameter Name="ProductType" Value="'OpenTop'"/>
+			</FB>
+			<FB Name="InsertOpenTop" Type="InsertProduct" Comment="" x="2800.0" y="5200.0">
+				<Parameter Name="ProductType" Value="'OpenTop'"/>
+			</FB>
+			<FB Name="InstallCabin" Type="InstallProduct" Comment="" x="4400.0" y="3060.0">
+				<Parameter Name="ProductType" Value="'Cabin'"/>
+			</FB>
+			<FB Name="InsertDumper" Type="InsertProduct" Comment="" x="2800.0" y="4126.666666666667">
+				<Parameter Name="ProductType" Value="'Dumper'"/>
+			</FB>
+			<FB Name="InstallDumper" Type="InstallProduct" Comment="" x="8400.0" y="4126.666666666667">
+				<Parameter Name="ProductType" Value="'Dumper'"/>
+			</FB>
+			<FB Name="InsertStakeBed" Type="InsertProduct" Comment="" x="2800.0" y="6260.0">
+				<Parameter Name="ProductType" Value="'StakeBed'"/>
+			</FB>
+			<FB Name="InstallStakeBed" Type="InstallProduct" Comment="" x="8400.0" y="6126.666666666667">
+				<Parameter Name="ProductType" Value="'StakeBed'"/>
+			</FB>
+			<FB Name="InsertTank" Type="InsertProduct" Comment="" x="2800.0" y="7200.0">
+				<Parameter Name="ProductType" Value="'Tank'"/>
+			</FB>
+			<FB Name="InstallTank" Type="InstallProduct" Comment="" x="8400.0" y="7060.0">
+				<Parameter Name="ProductType" Value="'Tank'"/>
+			</FB>
+			<FB Name="E_REND_Dumper" Type="E_REND" Comment="" x="6260.0" y="4000.0">
+			</FB>
+			<FB Name="E_REND_OpenTop" Type="E_REND" Comment="" x="6260.0" y="5060.0">
+			</FB>
+			<FB Name="E_REND_StakeBed" Type="E_REND" Comment="" x="6260.0" y="6000.0">
+			</FB>
+			<FB Name="E_REND_Tank" Type="E_REND" Comment="" x="6400.0" y="7060.0">
+			</FB>
+			<EventConnections>
+				<Connection Source="InsertChassis.CNF" Destination="InsertCabin.REQ" Comment="" dx1="726.6666666666667"/>
+				<Connection Source="InsertChassis.CNF" Destination="InsertOpenTop.REQ" Comment="" dx1="400.0"/>
+				<Connection Source="InsertChassis.CNF" Destination="InsertDumper.REQ" Comment="" dx1="720.0"/>
+				<Connection Source="InsertCabin.CNF" Destination="InstallCabin.REQ" Comment=""/>
+				<Connection Source="InsertChassis.CNF" Destination="InsertStakeBed.REQ" Comment="" dx1="460.0"/>
+				<Connection Source="InsertChassis.CNF" Destination="InsertTank.REQ" Comment="" dx1="460.0"/>
+				<Connection Source="E_REND_Dumper.EO" Destination="InstallDumper.REQ" Comment="" dx1="240.0"/>
+				<Connection Source="InstallCabin.CNF" Destination="E_REND_Dumper.EI1" Comment="" dx1="80.0"/>
+				<Connection Source="InsertDumper.CNF" Destination="E_REND_Dumper.EI2" Comment="" dx1="1100.0"/>
+				<Connection Source="InstallCabin.CNF" Destination="E_REND_OpenTop.EI1" Comment="" dx1="80.0"/>
+				<Connection Source="InstallCabin.CNF" Destination="E_REND_StakeBed.EI1" Comment="" dx1="80.0"/>
+				<Connection Source="InstallCabin.CNF" Destination="E_REND_Tank.EI1" Comment="" dx1="80.0"/>
+				<Connection Source="E_REND_OpenTop.EO" Destination="InstallOpenTop.REQ" Comment="" dx1="886.6666666666667"/>
+				<Connection Source="E_REND_StakeBed.EO" Destination="InstallStakeBed.REQ" Comment="" dx1="880.0"/>
+				<Connection Source="E_REND_Tank.EO" Destination="InstallTank.REQ" Comment="" dx1="866.6666666666667"/>
+				<Connection Source="InsertOpenTop.CNF" Destination="E_REND_OpenTop.EI2" Comment="" dx1="1246.6666666666667"/>
+				<Connection Source="InsertStakeBed.CNF" Destination="E_REND_StakeBed.EI2" Comment="" dx1="1260.0"/>
+				<Connection Source="InsertTank.CNF" Destination="E_REND_Tank.EI2" Comment="" dx1="1266.6666666666667"/>
+			</EventConnections>
+		</SubAppNetwork>
+	</Application>
+</System>

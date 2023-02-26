@@ -1,0 +1,8 @@
+delta DInsertDumper;
+uses TruckCaseStudyApp;
+
+{
+	<Remove> NetworkElement name=InsertOpenTop;
+	<Remove> NetworkElement name=InsertStakeBed;
+	<Remove> NetworkElement name=InsertTank;
+}

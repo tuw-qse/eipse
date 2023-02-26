@@ -1,0 +1,6 @@
+delta DANanofilterRack1;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedNanofilterRack1;
+}

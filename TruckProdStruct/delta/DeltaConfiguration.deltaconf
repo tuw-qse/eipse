@@ -1,0 +1,27 @@
+productline TruckProdStruct;
+variations truck_process#InstallBody#InstallTank,truck_process#InsertBody,truck_process#InsertBody#InsertTank,truck_resource#Robots,truck_product#Body#Dumper,truck_process#InstallBody#InstallDumper,truck_product#Body#Tank,truck_resource#Robots#KUKA_IIWA,truck_product#Body#OpenTop,truck_process#InstallBody,truck_product,truck_process,truck_process#InsertCabin,truck_product#Cabin,truck_resource,truck_process#InsertBody#InsertStakeBed,truck_process#InstallBody#InstallStakeBed,truck_product#Body,truck_process#InsertBody#InsertDumper,truck_product#Body#StakeBed,truck_process#InsertChassis,truck_product#Chassis,truck_resource#Robots#KUKA_KR_Agilus,truck_process#InsertBody#InsertOpenTop,truck_process#InstallBody#InstallOpenTop,truck_process#InstallCabin;
+
+delta DInstallOpenTop when truck_process#InstallBody#InstallOpenTop;
+
+delta DInstallDumper when truck_process#InstallBody#InstallDumper;
+
+delta DInstallStakeBed when truck_process#InstallBody#InstallStakeBed;
+
+delta DInstallTank when truck_process#InstallBody#InstallTank;
+
+delta DInsertOpenTop when truck_process#InsertBody#InsertOpenTop;
+
+delta DInsertTank when truck_process#InsertBody#InsertTank;
+
+delta DInsertDumper when truck_process#InsertBody#InsertDumper;
+
+delta DInsertStakeBed when truck_process#InsertBody#InsertStakeBed;
+
+delta DKukaIIWA when truck_resource#Robots#KUKA_IIWA;
+
+delta DKukaIIWACardinality(truck_resource#Robots#KUKA_IIWA!desiredCardinality) after DKukaIIWA when truck_resource#Robots#KUKA_IIWA;
+
+delta DKukaAgilus when truck_resource#Robots#KUKA_KR_Agilus;
+
+delta DKukaAgilusCardinality(truck_resource#Robots#KUKA_KR_Agilus!desiredCardinality) after DKukaAgilus when truck_resource#Robots#KUKA_KR_Agilus;
+

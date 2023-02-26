@@ -1,0 +1,6 @@
+delta DKukaIIWACardinality(robotInstances);
+uses TruckCaseStudyApp;
+
+{
+	<Copy> NetworkElement name=KUKA_IIWA instances=robotInstances includeOriginal;
+}

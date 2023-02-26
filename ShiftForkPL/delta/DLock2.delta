@@ -1,0 +1,8 @@
+delta DLock2;
+uses ShiftForkCaseStudyApp;
+
+{
+	<Remove> NetworkElement name=InsertLock2;
+	<Remove> NetworkElement name=WeldLock2;
+	<Remove> NetworkElement name=E_REND_WeldLock2;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SubAppType Name="E_REND3" Comment="Subapplication Type">
+	<Identification Standard="61499-2">
+	</Identification>
+	<VersionInfo Version="1.0" Author="AK124017" Date="2023-02-13">
+	</VersionInfo>
+	<SubAppInterfaceList>
+		<SubAppEventInputs>
+			<SubAppEvent Name="EI1" Type="Event" Comment="">
+				<Attribute Name="YPOSITION" Type="STRING" Value="20"/>
+			</SubAppEvent>
+			<SubAppEvent Name="EI2" Type="Event" Comment="">
+				<Attribute Name="YPOSITION" Type="STRING" Value="0"/>
+			</SubAppEvent>
+			<SubAppEvent Name="EI3" Type="Event" Comment="">
+				<Attribute Name="YPOSITION" Type="STRING" Value="116"/>
+			</SubAppEvent>
+			<SubAppEvent Name="R" Type="Event" Comment="">
+				<Attribute Name="YPOSITION" Type="STRING" Value="116"/>
+			</SubAppEvent>
+		</SubAppEventInputs>
+		<SubAppEventOutputs>
+			<SubAppEvent Name="EO" Type="Event" Comment="">
+				<Attribute Name="YPOSITION" Type="STRING" Value="299"/>
+			</SubAppEvent>
+		</SubAppEventOutputs>
+	</SubAppInterfaceList>
+	<SubAppNetwork>
+		<FB Name="E_REND_1" Type="E_REND" Comment="" x="1820.0" y="626.6666666666667">
+		</FB>
+		<FB Name="E_REND_2" Type="E_REND" Comment="" x="3006.666666666667" y="1526.6666666666667">
+		</FB>
+		<EventConnections>
+			<Connection Source="EI1" Destination="E_REND_1.EI1" Comment="" dx1="260.0"/>
+			<Connection Source="EI2" Destination="E_REND_1.EI2" Comment="" dx1="153.33333333333334"/>
+			<Connection Source="E_REND_1.EO" Destination="E_REND_2.EI1" Comment="" dx1="273.33333333333337"/>
+			<Connection Source="EI3" Destination="E_REND_2.EI2" Comment="" dx1="153.33333333333334"/>
+			<Connection Source="R" Destination="E_REND_1.R" Comment="" dx1="260.0"/>
+			<Connection Source="R" Destination="E_REND_2.R" Comment="" dx1="800.0"/>
+			<Connection Source="E_REND_2.EO" Destination="EO" Comment="" dx1="1526.6666666666667"/>
+		</EventConnections>
+	</SubAppNetwork>
+</SubAppType>

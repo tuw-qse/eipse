@@ -1,0 +1,6 @@
+delta DFTSIronFrame;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedFreshwaterTankSIronFrame;
+}

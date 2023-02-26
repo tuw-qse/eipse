@@ -1,0 +1,7 @@
+delta DLaserWeldingRobot01(robotInstances);
+uses ShiftForkCaseStudyApp;
+
+{
+	<Add> FB name=LaserWeldingRobot01_1 type=LaserWeldingRobot_01;
+	<Copy> NetworkElement name=LaserWeldingRobot01_1 instances=robotInstances includeOriginal;
+}

@@ -1,0 +1,6 @@
+delta DPipe2;
+uses ShiftForkCaseStudyApp.PopulatedPipe;
+
+{
+	<Remove> NetworkElement name=InsertPipe2;
+}

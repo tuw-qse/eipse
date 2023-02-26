@@ -1,0 +1,6 @@
+delta DFillFilterTankSModuleCB;
+uses Application;
+
+{
+	<Remove> NetworkElement name=FillFilterTankSModuleCB;
+}

@@ -1,0 +1,6 @@
+delta DFillFilterTankSand;
+uses Application;
+
+{
+	<Remove> NetworkElement name=FillFilterTankSand;
+}

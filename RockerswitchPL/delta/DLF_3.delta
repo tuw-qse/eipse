@@ -1,0 +1,7 @@
+delta DLF_3(lineInstances);
+uses Application;
+
+{
+	<Add> FB name=LF_3 type=LF_3;
+	<Copy> NetworkElement name=LF_3 instances=lineInstances includeOriginal;
+}

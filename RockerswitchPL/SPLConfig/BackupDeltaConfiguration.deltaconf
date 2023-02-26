@@ -1,0 +1,53 @@
+productline RockerswitchPL;
+variations rockerswitch_process#PressRocker1_1,rockerswitch_process#PressChangeover,rockerswitch_process#PressRocker1_2,rockerswitch_process#PressOff1_3,rockerswitch_process#PressOff1_4,rockerswitch_process#PressOff1_1,rockerswitch_process#PressOff1_2,rockerswitch_process#InsertScrew,rockerswitch_product#Neutral,rockerswitch_product#Crossover,rockerswitch_product#Changeover,rockerswitch_process#InsertOff,rockerswitch_product#O_Ring,rockerswitch_process#ScrewScrew1_2,rockerswitch_process#ScrewScrew1_1,rockerswitch_process#PressNeutral1_2,rockerswitch_process#PressNeutral1_1,rockerswitch_process#PressRocker,rockerswitch_process#InsertClaw,rockerswitch_resource#PressinRobots,rockerswitch_resource#Linefeeds#LF_3,rockerswitch_process#InsertClaw1_2,rockerswitch_resource#Linefeeds#LF_4,rockerswitch_resource#Linefeeds#LF_6,rockerswitch_resource#Linefeeds,rockerswitch_process#InsertNeutral,rockerswitch_process#InsertRocker,rockerswitch_product#Off,rockerswitch_product,rockerswitch_process,rockerswitch_process#PressRocker2_1,rockerswitch_resource#PressinRobots#SmallPartsPressinRobots#PR_02,rockerswitch_product#Series,rockerswitch_process#PressRocker2_2,rockerswitch_product#Socket,rockerswitch_resource#ScrewingRobots,rockerswitch_resource#PressinRobots#SmallPartsPressinRobots#PR_05,rockerswitch_product#Rocker,rockerswitch_product#Screw,rockerswitch_process#PressOff,rockerswitch_process#ScrewScrew,rockerswitch_process#PressChangeover2,rockerswitch_process#InsertRocker1_1,rockerswitch_product#Claw,rockerswitch_resource#PressinRobots#MediumPartsPressinRobots#PR_04,rockerswitch_resource#ScrewingRobots#SC_70,rockerswitch_process#PressChangeover1,rockerswitch_process#InsertSocket,rockerswitch_resource#PressinRobots#MediumPartsPressinRobots#PR_12,rockerswitch_process#InsertChangeover,rockerswitch_process#InsertSeries,rockerswitch_process#PressPole,rockerswitch_process#InsertPole,rockerswitch_process#PressCrossover,rockerswitch_process#InsertO_Ring,rockerswitch_resource,rockerswitch_process#InsertCrossover,rockerswitch_process#PressNeutral,rockerswitch_product#Pole,rockerswitch_process#PressSeries,
+rockerswitch_product#Neutral#Neutral1_1, rockerswitch_product#Neutral#Neutral1_2,
+rockerswitch_product#Rocker#Rocker1_1,
+rockerswitch_product#Rocker#Rocker1_2,
+rockerswitch_product#Rocker#Rocker2_1,
+rockerswitch_product#Rocker#Rocker2_2,
+rockerswitch_product#Off#Off1_1,
+rockerswitch_product#Off#Off1_2,
+rockerswitch_product#Off#Off1_3,
+rockerswitch_product#Off#Off1_4,
+rockerswitch_product#Changeover#Changeover1,
+rockerswitch_product#Changeover#Changeover2,
+rockerswitch_product#Pole#Pole1_1,
+rockerswitch_product#Pole#Pole1_2,
+rockerswitch_product#Pole#Pole2_1,
+rockerswitch_product#Pole#Pole2_2,
+rockerswitch_resource#PressingRobots#SmallPartsPressingRobots#PR_05,
+rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_12,
+rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_04,
+rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_02;
+
+delta DNetural1_1 when !rockerswitch_product#Neutral#Neutral1_1;
+delta DNetural1_2 when !rockerswitch_product#Neutral#Neutral1_2;
+delta DRocker1_1 when !rockerswitch_product#Rocker#Rocker1_1;
+delta DRocker1_2 when !rockerswitch_product#Rocker#Rocker1_2;
+delta DRocker2_1 when !rockerswitch_product#Rocker#Rocker2_1;
+delta DRocker2_2 when !rockerswitch_product#Rocker#Rocker2_2;
+delta DOff1_1 when !rockerswitch_product#Off#Off1_1;
+delta DOff1_2 when !rockerswitch_product#Off#Off1_2;
+delta DOff1_3 when !rockerswitch_product#Off#Off1_3;
+delta DOff1_4 when !rockerswitch_product#Off#Off1_4;
+delta DChangeover1 when !rockerswitch_product#Changeover#Changeover1;
+delta DChangeover2 when !rockerswitch_product#Changeover#Changeover2;
+delta DPole1_1 when !rockerswitch_product#Pole#Pole1_1;
+delta DPole1_2 when !rockerswitch_product#Pole#Pole1_2;
+delta DPole2_1 when !rockerswitch_product#Pole#Pole2_1;
+delta DPole2_2 when !rockerswitch_product#Pole#Pole2_2;
+delta DSeries when !rockerswitch_product#Series;
+delta DCrossover when !rockerswitch_product#Crossover;
+delta DLF_3(rockerswitch_resource#Linefeeds#LF_3!desiredCardinality) when rockerswitch_resource#Linefeeds#LF_3;
+delta DLF_4(rockerswitch_resource#Linefeeds#LF_4!desiredCardinality) when rockerswitch_resource#Linefeeds#LF_4;
+delta DLF_6(rockerswitch_resource#Linefeeds#LF_6!desiredCardinality) when rockerswitch_resource#Linefeeds#LF_6;
+delta DPR_02(rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_02!desiredCardinality) 
+      when rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_02;
+delta DPR_04(rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_04!desiredCardinality) 
+      when rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_04;
+delta DPR_12(rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_12!desiredCardinality) 
+      when rockerswitch_resource#PressingRobots#MediumPartsPressingRobots#PR_12;
+delta DPR_05(rockerswitch_resource#PressingRobots#SmallPartsPressingRobots#PR_05!desiredCardinality)
+      when rockerswitch_resource#PressingRobots#SmallPartsPressingRobots#PR_05;
+delta DSC_70(shiftfork_resource#ScrewingRobots#SC_70!desiredCardinality)
+      when rockerswitch_resource#ScrewingRobots#SC_70;

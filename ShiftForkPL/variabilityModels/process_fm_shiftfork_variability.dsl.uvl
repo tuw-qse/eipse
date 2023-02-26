@@ -1,0 +1,72 @@
+namespace shiftfork_variability_process
+
+features
+	shiftfork_variability_process {extended__ true, abstract true}
+		mandatory
+			InsertLock {deltaFile "", abstract true}
+				optional
+					InsertLock1 {deltaFile "!DLock1"}
+					InsertLock3 {deltaFile "!DLock3"}
+					InsertLock2 {deltaFile "!DLock2"}
+			InsertPipe {deltaFile "", abstract true}
+				optional
+					InsertPipe2 {deltaFile "!DPipe2"}
+					InsertPipe3 {deltaFile "!DPipe3"}
+					InsertPipe8 {deltaFile "!DPipe8"}
+			PressBarrel {deltaFile "", abstract true}
+				optional
+					PressBarrel1_1 {deltaFile ""}
+					PressBarrel1_2 {deltaFile ""}
+			WeldBarrel {deltaFile "", abstract true}
+				optional
+					WeldBarrel1_2 {deltaFile ""}
+					WeldBarrel1_1 {deltaFile ""}
+			InsertBarrel {deltaFile "", abstract true}
+				optional
+					InsertBarrel1_2 {deltaFile "!DBarrel12"}
+					InsertBarrel1_1 {deltaFile ""}
+			WeldLock {deltaFile "", abstract true}
+				alternative
+					WeldLock3 {deltaFile ""}
+					WeldLock2 {deltaFile ""}
+					WeldLock1 {deltaFile ""}
+			WeldFork3 {deltaFile ""}
+			WeldFork4 {deltaFile ""}
+		optional
+			WeldFork5 {deltaFile ""}
+			InsertJack1 {deltaFile ""}
+			PressJack1 {deltaFile ""}
+			InsertScrew {deltaFile ""}
+			InsertRing1 {deltaFile ""}
+			PressORing {deltaFile ""}
+			WeldJack1 {deltaFile ""}
+			ScrewScrew {deltaFile ""}
+			InsertORing {deltaFile ""}
+			InsertFork4 {deltaFile ""}
+			InsertFork3 {deltaFile ""}
+			InsertFork5 {deltaFile ""}
+			PressRing1 {deltaFile ""}
+
+constraints
+	WeldFork4 => InsertFork4
+	WeldFork4 => WeldFork5
+	WeldFork5 => InsertFork5
+	WeldFork3 => InsertFork3
+	WeldFork3 => WeldFork5
+	WeldLock1 => InsertLock1
+	WeldLock2 => InsertLock2
+	PressJack1 => InsertJack1
+	WeldLock3 => InsertLock3
+	PressBarrel1_1 => InsertBarrel1_1
+	PressBarrel1_2 => InsertBarrel1_2
+	PressORing => InsertORing
+	PressORing => PressJack1
+	PressORing => PressRing1
+	WeldJack1 => PressJack1
+	ScrewScrew => InsertScrew
+	ScrewScrew => PressJack1
+	ScrewScrew => PressRing1
+	WeldBarrel1_2 => PressBarrel1_2
+	WeldBarrel1_1 => PressBarrel1_1
+	PressRing1 => InsertRing1
+	PressRing1 => PressJack1

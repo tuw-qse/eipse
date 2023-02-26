@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workflow>
+    <step description="" name="Product" num="0">
+        <fm name="product_waterfilter_without_components.dsl.uvl" path="product_waterfilter_without_components.dsl.uvl"/>
+    </step>
+    <step description="" name="Process" num="1">
+        <fm name="process_fm_waterfilter_without_components.dsl.uvl" path="process_fm_waterfilter_without_components.dsl.uvl"/>
+    </step>
+    <step description="" name="Resource" num="2">
+        <fm name="resource_waterfilter_without_components.dsl.uvl" path="resource_waterfilter_without_components.dsl.uvl"/>
+    </step>
+</workflow>

@@ -1,0 +1,7 @@
+delta DPIT_10(toolInstances);
+uses Application;
+
+{
+	<Add> FB name=PIT_10 type=PIT_10;
+	<Copy> NetworkElement name=PIT_10 instances=toolInstances includeOriginal;
+}

@@ -1,0 +1,7 @@
+delta DTank3;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleTank3;
+	<Remove> NetworkElement name=E_REND_Tank3;
+}

@@ -1,0 +1,8 @@
+delta DRocker1_2;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertRocker1_2;
+	<Remove> NetworkElement name=E_REND_PRocker1_2;
+	<Remove> NetworkElement name=PressRocker1_2;
+}

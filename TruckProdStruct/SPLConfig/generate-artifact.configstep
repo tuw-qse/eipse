@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workflow>
+    <step description="" name="Product" num="0">
+        <fm name="product_truck.uvl" path="product_truck.uvl"/>
+    </step>
+    <step description="" name="Process" num="1">
+        <fm name="process_fm_truck.uvl" path="process_fm_truck.uvl"/>
+    </step>
+    <step description="" name="Resource" num="2">
+        <fm name="resource_truck.uvl" path="resource_truck.uvl"/>
+    </step>
+</workflow>

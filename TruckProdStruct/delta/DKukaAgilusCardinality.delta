@@ -1,0 +1,6 @@
+delta DKukaAgilusCardinality(robotInstances);
+uses TruckCaseStudyApp;
+
+{
+	<Copy> NetworkElement name=KUKA_KR_Agilus instances=robotInstances includeOriginal;
+}

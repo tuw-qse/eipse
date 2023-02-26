@@ -1,0 +1,19 @@
+CD1) truck_process#InstallStakeBed => truck_resource#KUKA_IIWA;
+CD2) truck_process#InsertDumper => truck_resource#Robots;
+CD3) truck_product#Tank => truck_process#InstallTank;
+CD4) truck_product#OpenTop => truck_process#InstallOpenTop;
+CD5) truck_product#StakeBed => truck_process#InstallStakeBed;
+CD6) truck_product#Dumper => truck_process#InstallDumper;
+CD7) truck_process#InsertOpenTop => truck_resource#Robots;
+CD8) truck_process#InstallDumper => truck_resource#Robots;
+CD9) truck_process#InstallBody => truck_resource#Robots;
+CD10) truck_process#InstallTank => truck_resource#Robots;
+CD11) truck_process#InsertChassis => truck_resource#Robots;
+CD12) truck_process#InstallCabin => truck_resource#Robots;
+CD13) truck_process#InsertBody => truck_resource#Robots;
+CD14) truck_process#InsertCabin => truck_resource#Robots;
+CD15) truck_process#InstallOpenTop => truck_resource#Robots;
+CD16) truck_process#InsertStakeBed => truck_resource#Robots;
+CD17) truck_process#InsertTank => truck_resource#Robots;
+CD18) truck_product#Chassis && truck_product#Cabin && truck_product#Body => 
+      truck_process#InstallBody && truck_process#InstallCabin && truck_process#InsertChassis;

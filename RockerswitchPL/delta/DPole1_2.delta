@@ -1,0 +1,8 @@
+delta DPole1_2;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertPole1_2;
+	<Remove> NetworkElement name=E_REND_PPole1_2;
+	<Remove> NetworkElement name=PressPole1_2;
+}

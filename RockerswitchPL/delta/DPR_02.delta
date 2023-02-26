@@ -1,0 +1,7 @@
+delta DPR_02(robotInstances);
+uses Application;
+
+{
+	<Add> FB name=PR_02 type=PR_02;
+	<Copy> NetworkElement name=PR_02 instances=robotInstances includeOriginal;
+}

@@ -1,0 +1,7 @@
+delta DLF_4(lineInstances);
+uses ShiftForkCaseStudyApp;
+
+{
+	<Add> FB name=LF_4_1 type=LF_4;
+	<Copy> NetworkElement name=LF_4_1 instances=lineInstances includeOriginal;
+}

@@ -1,0 +1,8 @@
+delta DOff1_3;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertOff1_3;
+	<Remove> NetworkElement name=E_REND_POff1_3;
+	<Remove> NetworkElement name=PressOff1_3;
+}

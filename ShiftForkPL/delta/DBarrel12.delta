@@ -1,0 +1,9 @@
+delta DBarrel12;
+uses ShiftForkCaseStudyApp;
+
+{
+	<Remove> NetworkElement name=InsertBarrel1_2;
+	<Remove> NetworkElement name=PressBarrel1_2;
+	<Remove> NetworkElement name=E_WBarrel1_2;
+	<Remove> NetworkElement name=WeldBarrel1_2;
+}

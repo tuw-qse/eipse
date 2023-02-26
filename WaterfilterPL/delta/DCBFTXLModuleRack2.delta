@@ -1,0 +1,6 @@
+delta DCBFTXLModuleRack2;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedCBFilterTankXLModuleRack2;
+}

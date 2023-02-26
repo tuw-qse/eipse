@@ -1,0 +1,10 @@
+namespace truck_resource
+
+features
+	truck_resource {extended__ true, abstract true}
+		mandatory
+			Robots {deltaFile "", abstract true}
+				optional
+					KUKA_IIWA {deltaFile "DKukaIIWA, DKukaIIWACardinality(desiredCardinality)", InstanceNum "1..100"}
+					KUKA_KR_Agilus {deltaFile "DKukaAgilus, DKukaAgilusCardinality(desiredCardinality)", InstanceNum "1..100"}
+

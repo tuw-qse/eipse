@@ -1,0 +1,6 @@
+delta DAssembleFreshwaterTankXLModule;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleFreshwaterTankXLModule;
+}

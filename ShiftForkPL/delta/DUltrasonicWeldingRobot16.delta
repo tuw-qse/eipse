@@ -1,0 +1,7 @@
+delta DUltrasonicWeldingRobot16(robotInstances);
+uses ShiftForkCaseStudyApp;
+
+{
+	<Add> FB name=UltrasonicWeldingRobot16 type=UltrasonicWeldingRobot_16;
+	<Copy> NetworkElement name=UltrasonicWeldingRobot16 instances=robotInstances includeOriginal;
+}

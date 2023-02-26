@@ -1,0 +1,7 @@
+delta DSC_70(robotInstances);
+uses Application;
+
+{
+	<Add> FB name=SC_70 type=SC_70;
+	<Copy> NetworkElement name=SC_70 instances=robotInstances includeOriginal;
+}

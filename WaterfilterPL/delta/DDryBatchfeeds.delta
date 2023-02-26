@@ -1,0 +1,7 @@
+delta DDryBatchfeeds(batchInstances);
+uses Application;
+
+{
+	<Add> FB name=DryBatchfeeds type=DryBatchfeeds;
+	<Copy> NetworkElement name=DryBatchfeeds instances=batchInstances includeOriginal;
+}

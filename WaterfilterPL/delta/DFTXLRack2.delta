@@ -1,0 +1,6 @@
+delta DFTXLRack2;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedFreshwaterTankXLRack2;
+}

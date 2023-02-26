@@ -1,0 +1,7 @@
+delta DPR_04(robotInstances);
+uses ShiftForkCaseStudyApp;
+
+{
+	<Add> FB name=PR_04_1 type=PR_04;
+	<Copy> NetworkElement name=PR_04_1 instances=robotInstances includeOriginal;
+}

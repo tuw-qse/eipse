@@ -1,0 +1,6 @@
+delta DCAFTSModuleRack1;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedCAFilterTankSModuleRack1;
+}

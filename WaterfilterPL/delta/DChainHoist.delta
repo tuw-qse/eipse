@@ -1,0 +1,7 @@
+delta DChainHoist(batchInstances);
+uses Application;
+
+{
+	<Add> FB name=DChainHoist type=ChainHoist;
+	<Copy> NetworkElement name=DChainHoist instances=batchInstances includeOriginal;
+}

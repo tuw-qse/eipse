@@ -1,0 +1,6 @@
+delta DWTXLRack2;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleMountedWastewaterTankXLRack2;
+}

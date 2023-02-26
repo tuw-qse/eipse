@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System Name="ShiftForkCaseStudy" Comment="">
+	<VersionInfo Version="1.0" Author="AK124017" Date="2022-12-15">
+	</VersionInfo>
+	<Application Name="ShiftForkCaseStudyApp" Comment="">
+		<SubAppNetwork>
+			<FB Name="InsertFork5" Type="InsertProduct" Comment="" x="4133.333333333334" y="6266.666666666667">
+				<Parameter Name="ProductType" Value="'InsertFork5'"/>
+			</FB>
+			<FB Name="WeldFork5" Type="WeldProduct" Comment="" x="8120.0" y="5193.333333333334">
+				<Parameter Name="ProductType" Value="'WeldFork5'"/>
+			</FB>
+			<FB Name="InsertFork3" Type="InsertProduct" Comment="" x="8920.0" y="6126.666666666667">
+				<Parameter Name="ProductType" Value="'InsertFork3'"/>
+			</FB>
+			<FB Name="WeldFork3" Type="WeldProduct" Comment="" x="12533.333333333334" y="4533.333333333334">
+				<Parameter Name="ProductType" Value="'WeldFork3'"/>
+			</FB>
+			<FB Name="InsertFork4" Type="InsertProduct" Comment="" x="9313.333333333334" y="7053.333333333334">
+				<Parameter Name="ProductType" Value="'InsertFork4'"/>
+			</FB>
+			<FB Name="WeldFork4" Type="WeldProduct" Comment="" x="13180.0" y="6120.0">
+				<Parameter Name="ProductType" Value="'WeldFork4'"/>
+			</FB>
+			<FB Name="InsertLock1" Type="InsertProduct" Comment="" x="15466.666666666668" y="2400.0">
+				<Parameter Name="ProductType" Value="'InsertLock1'"/>
+			</FB>
+			<FB Name="InsertLock2" Type="InsertProduct" Comment="" x="13600.0" y="5333.333333333334">
+				<Parameter Name="ProductType" Value="'InsertLock2'"/>
+			</FB>
+			<FB Name="InsertLock3" Type="InsertProduct" Comment="" x="13333.333333333334" y="8000.0">
+				<Parameter Name="ProductType" Value="'InsertLock3'"/>
+			</FB>
+			<FB Name="WeldLock1" Type="WeldProduct" Comment="" x="18800.0" y="3333.3333333333335">
+				<Parameter Name="ProductType" Value="'WeldLock1'"/>
+			</FB>
+			<FB Name="WeldLock2" Type="WeldProduct" Comment="" x="18533.333333333336" y="5333.333333333334">
+				<Parameter Name="ProductType" Value="'WeldLock2'"/>
+			</FB>
+			<FB Name="WeldLock3" Type="WeldProduct" Comment="" x="18133.333333333336" y="7733.333333333334">
+				<Parameter Name="ProductType" Value="'WeldLock3'"/>
+			</FB>
+			<FB Name="E_REND_WeldFork3" Type="E_REND" Comment="" x="10953.333333333334" y="4513.333333333334">
+			</FB>
+			<FB Name="E_REND_WeldFork4" Type="E_REND" Comment="" x="11586.666666666668" y="6093.333333333334">
+			</FB>
+			<FB Name="PressRing1" Type="PressProduct" Comment="" x="6533.333333333334" y="3733.3333333333335">
+				<Parameter Name="ProductType" Value="'PressRing1'"/>
+			</FB>
+			<FB Name="InsertORing" Type="InsertProduct" Comment="" x="10533.333333333334" y="2266.666666666667">
+				<Parameter Name="ProductType" Value="'InsertORing'"/>
+			</FB>
+			<FB Name="InsertJack1" Type="InsertProduct" Comment="" x="-266.6666666666667" y="2800.0">
+				<Parameter Name="ProductType" Value="'InsertJack1'"/>
+			</FB>
+			<FB Name="PressJack1" Type="PressProduct" Comment="" x="3600.0" y="3333.3333333333335">
+				<Parameter Name="ProductType" Value="'PressJack1'"/>
+			</FB>
+			<FB Name="InsertScrew" Type="InsertProduct" Comment="" x="9600.0" y="0.0">
+				<Parameter Name="ProductType" Value="'InsertScrew'"/>
+			</FB>
+			<FB Name="InsertRing1" Type="InsertProduct" Comment="" x="2800.0" y="4533.333333333334">
+				<Parameter Name="ProductType" Value="'InsertRing1'"/>
+			</FB>
+			<FB Name="ScrewScrew" Type="ScrewProduct" Comment="" x="13400.0" y="1700.0">
+				<Parameter Name="ProductType" Value="'ScrewScrew'"/>
+			</FB>
+			<FB Name="PressORing" Type="PressProduct" Comment="" x="13480.0" y="2513.3333333333335">
+				<Parameter Name="ProductType" Value="'PressORing'"/>
+			</FB>
+			<FB Name="PressBarrel1_1" Type="PressProduct" Comment="" x="4000.0" y="-933.3333333333334">
+				<Parameter Name="ProductType" Value="'PressBarrel1_1'"/>
+			</FB>
+			<FB Name="InsertBarrel1_1" Type="InsertProduct" Comment="" x="533.3333333333334" y="-933.3333333333334">
+				<Parameter Name="ProductType" Value="'InsertBarrel1_1'"/>
+			</FB>
+			<FB Name="WeldBarrel1_1" Type="WeldProduct" Comment="" x="7600.0" y="-933.3333333333334">
+				<Parameter Name="ProductType" Value="'WeldBarrel1_1'"/>
+			</FB>
+			<FB Name="PressBarrel1_2" Type="PressProduct" Comment="" x="4133.333333333334" y="266.6666666666667">
+				<Parameter Name="ProductType" Value="'PressBarrel1_2'"/>
+			</FB>
+			<FB Name="WeldBarrel1_2" Type="WeldProduct" Comment="" x="7580.0" y="266.6666666666667">
+				<Parameter Name="ProductType" Value="'WeldBarrel1_2'"/>
+			</FB>
+			<FB Name="InsertBarrel1_2" Type="InsertProduct" Comment="" x="533.3333333333334" y="266.6666666666667">
+				<Parameter Name="ProductType" Value="'InsertBarrel1_2'"/>
+			</FB>
+			<FB Name="WeldJack1" Type="WeldProduct" Comment="" x="6933.333333333334" y="1466.6666666666667">
+			</FB>
+			<FB Name="E_WBarrel1_1" Type="E_REND" Comment="" x="5600.0" y="-933.3333333333334">
+			</FB>
+			<FB Name="E_WBarrel1_2" Type="E_REND" Comment="" x="5733.333333333334" y="266.6666666666667">
+			</FB>
+			<FB Name="E_REND_WJack1" Type="E_REND" Comment="" x="5733.333333333334" y="1600.0">
+			</FB>
+			<SubApp Name="E_REND_PRing1" Type="E_REND3" Comment="" x="5200.0" y="3866.666666666667">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<SubApp Name="E_REND_PORing" Type="E_REND4" Comment="" x="12000.0" y="2800.0">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<SubApp Name="E_REND5" Type="E_REND3" Comment="" x="11600.0" y="933.3333333333334">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<FB Name="E_REND_WFork5" Type="E_REND" Comment="" x="6400.0" y="5200.0">
+			</FB>
+			<SubApp Name="E_REND_WeldLock1" Type="E_REND3" Comment="" x="16933.333333333336" y="3066.666666666667">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<SubApp Name="E_REND_WeldLock2" Type="E_REND3" Comment="" x="16266.666666666668" y="5333.333333333334">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<SubApp Name="E_REND_WeldLock3" Type="E_REND3" Comment="" x="16133.333333333334" y="7866.666666666667">
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<FB Name="E_PBarrel1_1" Type="E_REND" Comment="" x="2266.666666666667" y="-933.3333333333334">
+			</FB>
+			<FB Name="E_PBarrel1_2" Type="E_REND" Comment="" x="2266.666666666667" y="266.6666666666667">
+			</FB>
+			<SubApp Name="PopulatedPipe" Comment="" x="-1386.6666666666667" y="1653.3333333333335">
+				<SubAppInterfaceList>
+					<SubAppEventInputs>
+						<SubAppEvent Name="INIT" Type="Event" Comment="">
+							<Attribute Name="YPOSITION" Type="STRING" Value="171"/>
+						</SubAppEvent>
+						<SubAppEvent Name="REQ" Type="Event" Comment="">
+							<Attribute Name="YPOSITION" Type="STRING" Value="122"/>
+						</SubAppEvent>
+					</SubAppEventInputs>
+					<SubAppEventOutputs>
+						<SubAppEvent Name="INITO" Type="Event" Comment="">
+							<Attribute Name="YPOSITION" Type="STRING" Value="20"/>
+						</SubAppEvent>
+						<SubAppEvent Name="CNF" Type="Event" Comment="">
+							<Attribute Name="YPOSITION" Type="STRING" Value="434"/>
+						</SubAppEvent>
+					</SubAppEventOutputs>
+				</SubAppInterfaceList>
+				<SubAppNetwork>
+					<FB Name="InsertPipe2" Type="InsertProduct" Comment="" x="-646.6666666666667" y="1113.3333333333335">
+						<Parameter Name="ProductType" Value="'InsertPipe2'"/>
+					</FB>
+					<FB Name="InsertPipe3" Type="InsertProduct" Comment="" x="-646.6666666666667" y="173.33333333333334">
+						<Parameter Name="ProductType" Value="'InsertPipe3'"/>
+					</FB>
+					<FB Name="InsertPipe8" Type="InsertProduct" Comment="" x="-646.6666666666667" y="-826.6666666666667">
+						<Parameter Name="ProductType" Value="'InsertPipe8'"/>
+					</FB>
+					<EventConnections>
+						<Connection Source="INIT" Destination="InsertPipe2.INIT" Comment="" dx1="1226.6666666666667"/>
+						<Connection Source="REQ" Destination="InsertPipe2.REQ" Comment="" dx1="1120.0"/>
+						<Connection Source="INIT" Destination="InsertPipe3.INIT" Comment="" dx1="1333.3333333333335"/>
+						<Connection Source="REQ" Destination="InsertPipe3.REQ" Comment="" dx1="1546.6666666666667"/>
+						<Connection Source="REQ" Destination="InsertPipe8.REQ" Comment="" dx1="1440.0"/>
+						<Connection Source="INIT" Destination="InsertPipe8.INIT" Comment="" dx1="1253.3333333333335"/>
+						<Connection Source="InsertPipe2.INITO" Destination="INITO" Comment="" dx1="306.6666666666667"/>
+						<Connection Source="InsertPipe2.CNF" Destination="CNF" Comment="" dx1="413.33333333333337"/>
+						<Connection Source="InsertPipe3.CNF" Destination="CNF" Comment="" dx1="520.0"/>
+						<Connection Source="InsertPipe3.INITO" Destination="INITO" Comment="" dx1="520.0"/>
+						<Connection Source="InsertPipe8.CNF" Destination="CNF" Comment="" dx1="626.6666666666667"/>
+						<Connection Source="InsertPipe8.INITO" Destination="INITO" Comment="" dx1="413.33333333333337"/>
+					</EventConnections>
+				</SubAppNetwork>
+				<Attribute Name="width" Type="LREAL" Value="1333.3333333333335"/>
+				<Attribute Name="height" Type="LREAL" Value="666.6666666666667"/>
+			</SubApp>
+			<FB Name="E_PJack1" Type="E_REND" Comment="" x="2666.666666666667" y="2800.0">
+			</FB>
+			<EventConnections>
+				<Connection Source="InsertFork3.CNF" Destination="E_REND_WeldFork3.EI2" Comment="" dx1="680.0"/>
+				<Connection Source="WeldFork5.CNF" Destination="E_REND_WeldFork3.EI1" Comment="" dx1="933.3333333333334"/>
+				<Connection Source="E_REND_WeldFork3.EO" Destination="WeldFork3.INIT" Comment="" dx1="293.33333333333337"/>
+				<Connection Source="InsertFork4.CNF" Destination="E_REND_WeldFork4.EI2" Comment="" dx1="593.3333333333334"/>
+				<Connection Source="WeldFork5.CNF" Destination="E_REND_WeldFork4.EI1" Comment="" dx1="1493.3333333333335"/>
+				<Connection Source="E_REND_WeldFork4.EO" Destination="WeldFork4.INIT" Comment="" dx1="300.0"/>
+				<Connection Source="PressBarrel1_1.CNF" Destination="E_WBarrel1_1.EI1" Comment="" dx1="286.6666666666667"/>
+				<Connection Source="E_WBarrel1_1.EO" Destination="WeldBarrel1_1.INIT" Comment=""/>
+				<Connection Source="PressBarrel1_2.CNF" Destination="E_WBarrel1_2.EI1" Comment="" dx1="286.6666666666667"/>
+				<Connection Source="E_WBarrel1_2.EO" Destination="WeldBarrel1_2.INIT" Comment=""/>
+				<Connection Source="PressJack1.CNF" Destination="E_REND_WJack1.EI1" Comment="" dx1="800.0"/>
+				<Connection Source="E_REND_WJack1.EO" Destination="WeldJack1.REQ" Comment="" dx1="193.33333333333334"/>
+				<Connection Source="E_REND_PRing1.EO" Destination="PressRing1.REQ" Comment="" dx1="260.0"/>
+				<Connection Source="InsertORing.CNF" Destination="E_REND_PORing.EI1" Comment="" dx1="186.66666666666669"/>
+				<Connection Source="E_REND_PORing.EO" Destination="PressORing.REQ" Comment="" dx1="333.33333333333337"/>
+				<Connection Source="InsertScrew.INITO" Destination="E_REND5.EI1" Comment="" dx1="453.33333333333337"/>
+				<Connection Source="PressJack1.CNF" Destination="E_REND5.EI2" Comment="" dx1="4513.333333333334"/>
+				<Connection Source="PressRing1.CNF" Destination="E_REND5.EI3" Comment="" dx1="1686.6666666666667"/>
+				<Connection Source="E_REND5.EO" Destination="ScrewScrew.REQ" Comment="" dx1="533.3333333333334"/>
+				<Connection Source="E_REND_WFork5.EO" Destination="WeldFork5.REQ" Comment="" dx1="453.33333333333337"/>
+				<Connection Source="InsertLock1.CNF" Destination="E_REND_WeldLock1.EI1" Comment="" dx1="186.66666666666669"/>
+				<Connection Source="E_REND_WeldLock1.EO" Destination="WeldLock1.REQ" Comment="" dx1="440.0"/>
+				<Connection Source="WeldFork3.CNF" Destination="E_REND_WeldLock1.EI2" Comment="" dx1="1713.3333333333335"/>
+				<Connection Source="WeldFork4.CNF" Destination="E_REND_WeldLock1.EI3" Comment="" dx1="1380.0"/>
+				<Connection Source="WeldFork3.CNF" Destination="E_REND_WeldLock2.EI1" Comment="" dx1="1920.0"/>
+				<Connection Source="InsertLock2.CNF" Destination="E_REND_WeldLock2.EI2" Comment=""/>
+				<Connection Source="WeldFork4.CNF" Destination="E_REND_WeldLock2.EI3" Comment="" dx1="1486.6666666666667"/>
+				<Connection Source="E_REND_WeldLock2.EO" Destination="WeldLock2.REQ" Comment="" dx1="640.0"/>
+				<Connection Source="InsertLock3.CNF" Destination="E_REND_WeldLock3.EI3" Comment="" dx1="853.3333333333334"/>
+				<Connection Source="WeldFork3.CNF" Destination="E_REND_WeldLock3.EI1" Comment="" dx1="1813.3333333333335"/>
+				<Connection Source="WeldFork4.CNF" Destination="E_REND_WeldLock3.EI2" Comment="" dx1="1060.0"/>
+				<Connection Source="E_REND_WeldLock3.EO" Destination="WeldLock3.REQ" Comment="" dx1="506.6666666666667"/>
+				<Connection Source="E_PBarrel1_1.EO" Destination="PressBarrel1_1.REQ" Comment="" dx1="526.6666666666667"/>
+				<Connection Source="InsertBarrel1_1.CNF" Destination="E_PBarrel1_1.EI1" Comment="" dx1="320.0"/>
+				<Connection Source="InsertBarrel1_2.CNF" Destination="E_PBarrel1_2.EI1" Comment="" dx1="353.33333333333337"/>
+				<Connection Source="E_PBarrel1_2.EO" Destination="PressBarrel1_2.REQ" Comment="" dx1="560.0"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_PBarrel1_1.EI2" Comment="" dx1="2446.666666666667"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_WBarrel1_1.EI2" Comment="" dx1="5793.333333333334"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_PBarrel1_2.EI2" Comment="" dx1="2553.3333333333335"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_WBarrel1_2.EI2" Comment="" dx1="5900.0"/>
+				<Connection Source="E_PJack1.EO" Destination="PressJack1.REQ" Comment="" dx1="133.33333333333334"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_PJack1.EI1" Comment="" dx1="2320.0"/>
+				<Connection Source="InsertJack1.CNF" Destination="E_PJack1.EI2" Comment=""/>
+				<Connection Source="InsertRing1.INITO" Destination="E_REND_PRing1.EI3" Comment="" dx1="653.3333333333334"/>
+				<Connection Source="PressJack1.CNF" Destination="E_REND_PRing1.EI2" Comment="" dx1="286.6666666666667"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_REND_PRing1.EI1" Comment="" dx1="5600.0"/>
+				<Connection Source="PressRing1.CNF" Destination="E_REND_PORing.EI4" Comment="" dx1="1473.3333333333335"/>
+				<Connection Source="PressJack1.CNF" Destination="E_REND_PORing.EI3" Comment="" dx1="3686.666666666667"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_REND_PORing.EI2" Comment="" dx1="6113.333333333334"/>
+				<Connection Source="InsertFork5.CNF" Destination="E_REND_WFork5.EI2" Comment="" dx1="586.6666666666667"/>
+				<Connection Source="PopulatedPipe.CNF" Destination="E_REND_WFork5.EI1" Comment="" dx1="5386.666666666667"/>
+			</EventConnections>
+		</SubAppNetwork>
+	</Application>
+</System>

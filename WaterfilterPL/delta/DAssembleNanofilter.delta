@@ -1,0 +1,6 @@
+delta DAssembleNanofilter;
+uses Application;
+
+{
+	<Remove> NetworkElement name=AssembleNanofilter;
+}

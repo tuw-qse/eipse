@@ -1,0 +1,9 @@
+delta DKukaAgilus;
+uses TruckCaseStudyApp;
+
+{
+	<Add> FB name=KUKA_KR_Agilus type=Robots;
+	<Modify> Variable name=KUKA_KR_Agilus.RobotType value='KUKA_KR_Agilus';
+	<Add> EventConnection KUKA_KR_Agilus.INITO InsertChassis.INIT;
+	<Add> EventConnection KUKA_KR_Agilus.CNF InsertChassis.REQ;
+}

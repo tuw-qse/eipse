@@ -1,0 +1,8 @@
+delta DSeries;
+uses Application;
+
+{
+	<Remove> NetworkElement name=InsertSeries;
+	<Remove> NetworkElement name=E_REND_PSeries;
+	<Remove> NetworkElement name=PressSeries;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<workflow>
+    <step description="" name="Product" num="0">
+        <fm name="product_rockerswitch.dsl.uvl" path="product_rockerswitch.dsl.uvl"/>
+    </step>
+    <step description="" name="Process" num="1">
+        <fm name="process_fm_rockerswitch.dsl.uvl" path="process_fm_rockerswitch.dsl.uvl"/>
+    </step>
+    <step description="" name="Resource" num="2">
+        <fm name="resource_rockerswitch.dsl.uvl" path="resource_rockerswitch.dsl.uvl"/>
+    </step>
+</workflow>
