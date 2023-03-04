@@ -68,5 +68,5 @@ As a user, create a `.dconfig` (process) decision model configuration by right-c
 
 As a user, create a V4rdiac configuration in the V4rdiac perspective.
 Validate the currently selected *product* and *process* variability models.
-Configure the (resource) feature models and choose the number of instances.
-On saving the configuration, the according function block diagrams should be created.
+Configure the (resource) feature models and choose the number of instances (cf. Figure 7 in the paper).
+On saving the configuration, the according function block diagrams should be created (cf. Figure 8 in the paper).
