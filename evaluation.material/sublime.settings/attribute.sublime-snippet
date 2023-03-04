@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+Attribute "${1:id}": {
+  name: "${1:name}",
+  defaultValue: "${2:defaultValue}",
+  type: "${3:type}",
+  unit: "${4:unit}",
+  description: "${5:description}"
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>attribute</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pprdsl</scope>
+</snippet>

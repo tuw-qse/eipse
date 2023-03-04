@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+Product "${1:id}": {
+  name: "${1:name}",
+  isAbstract: true,
+  implements: [ "${2:productId}", "" ],
+  excludes: [ "${3:productId}", "" ],
+  requires: [ "${4:productId}", "" ],
+  children: [ "${5:productId}", "" ],
+  description: ""
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>product</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pprdsl</scope>
+</snippet>

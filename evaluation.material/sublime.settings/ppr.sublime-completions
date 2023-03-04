@@ -1,0 +1,17 @@
+{
+        "scope": "source.pprdsl",
+
+        "completions":
+        [
+                { "trigger": "child", "contents": "children: [ \"$1\" ],"},
+                { "trigger": "excl", "contents": "excludes: [ \"$1\" ],"},
+                { "trigger": "impl", "contents": "implements: [ \"$1\" ],"},
+                { "trigger": "in", "contents": "inputs: [ { productId: \"$1\" } ],"},
+                { "trigger": "isa", "contents": "isAbstract: \"$1\","},
+                { "trigger": "name", "contents": "name: \"$1\","},
+                { "trigger": "out", "contents": "inputs: [ { $1: { productId: \"$2\" } } ],"},
+                { "trigger": "req", "contents": "excludes: [ \"$1\" ],"},
+                { "trigger": "res", "contents": "inputs: [ { resourceId: \"$1\" } ],"},
+
+        ]
+}

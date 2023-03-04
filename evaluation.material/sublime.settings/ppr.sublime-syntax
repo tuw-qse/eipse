@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+name: PPR-DSL
+file_extensions:
+  - [ppr, dsl]
+scope: source.pprdsl
+contexts:
+  main:
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+    - match: '"'
+      scope: punctuation.definition.string.begin.pprdsl
+      push: double_quoted_string
+
+    # Comments begin with a '#' and finish at the end of the line
+    - match: '#'
+      scope: punctuation.definition.comment.pprdsl
+      push: line_comment
+
+    # Keywords are if, else for and while.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+    - match: '\b(Product|Process|Resource|implements|excludes|requires|name|isAbstract|children|inputs|outputs|resources|Constraint|definition|Attribute|defaultValue|description|type|unit)\b'
+      scope: keyword.control.pprdsl
+
+    # Numbers
+    - match: '\b(-)?[0-9.]+\b'
+      scope: constant.numeric.pprdsl
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.pprdsl
+    - match: '\\.'
+      scope: constant.character.escape.pprdsl
+    - match: '"'
+      scope: punctuation.definition.string.end.pprdsl
+      pop: true
+
+  line_comment:
+    - meta_scope: comment.line.pprdsl
+    - match: $
+      pop: true

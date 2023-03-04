@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+Process "${1:id}": {
+  name: "${1:name}",
+  isAbstract: true,
+  inputs: [ { productId: "${3:input}" }, { productId: "" } ],
+  outputs: [ {${2:opid}: { productId: "${4:product}", costWeight: 1.0 }}, { OPID: { productId: "", costWeight: 1.0 }} ],
+  resources: [ { resourceId: "${5:resourceId}", minCost: 50, maxCost: 100 }, { resourceId: "", minCost: 50, maxCost: 100 } ]
+  implements: [ "${6:processId}", "" ],
+  excludes: [ "${7:processId}", "" ],
+  requires: [ "${8:processId}", "" ],
+  children: [ "${9:processId}", "" ],
+  description: ""
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>process</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.pprdsl</scope>
+</snippet>
