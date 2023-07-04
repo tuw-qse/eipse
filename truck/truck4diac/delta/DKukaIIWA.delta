@@ -4,6 +4,6 @@ uses TruckCaseStudyApp;
 {
 	<Add> FB name=KUKA_IIWA type=Robots;
 	<Modify> Variable name=KUKA_IIWA.RobotType value='KUKA_IIWA';
-	<Add> EventConnection KUKA_IIWA.INITO InsertChassis.INIT;
-	<Add> EventConnection KUKA_IIWA.CNF InsertChassis.REQ;
+	<Add> EventConnection source=KUKA_IIWA.INITO dest=InsertChassis.INIT;
+	<Add> EventConnection source=KUKA_IIWA.CNF dest=InsertChassis.REQ;
 }
