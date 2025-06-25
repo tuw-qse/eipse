@@ -55,3 +55,12 @@ constraints
         Off1_2 => Rocker1_2
         Changeover1 => Rocker1_1
         (Changeover2 => Rocker1_1) & (Changeover2 => Rocker1_2)
+
+visibility-constraints
+        Rocker vif Pole
+        Off vif Rocker
+        Off1_1 vif Rocker1_1
+        Off1_2 vif Rocker1_2
+        Changeover1 vif Rocker1_1
+        Changeover2 vif Rocker1_1
+        Changeover2 vif Rocker1_2

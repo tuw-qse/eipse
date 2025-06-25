@@ -1,30 +1,30 @@
 features
         shiftfork_variability_product {extended__ true, abstract true}
                 mandatory
-                        Barrel {deltaFile "", abstract true}
+                        Barrel {deltaFile '', abstract true}
                                 optional
-                                        Barrel1_2 {deltaFile ""}
+                                        Barrel1_2 {deltaFile ''}
                                 mandatory
-                                        Barrel1_1 {deltaFile ""}
-                        Screw {deltaFile ""}
-                        Jack1 {deltaFile ""}
-                        Ring1 {deltaFile ""}
-                        O_Ring {deltaFile ""}
-                        Fork {deltaFile "", abstract true}
+                                        Barrel1_1 {deltaFile ''}
+                        Screw {deltaFile ''}
+                        Jack1 {deltaFile ''}
+                        Ring1 {deltaFile ''}
+                        O_Ring {deltaFile ''}
+                        Fork {deltaFile '', abstract true}
                                 mandatory
-                                        Fork3 {deltaFile ""}
-                                        Fork4 {deltaFile ""}
-                                        Fork5 {deltaFile ""}
-                        Pipe {deltaFile "", abstract true}
+                                        Fork3 {deltaFile ''}
+                                        Fork4 {deltaFile ''}
+                                        Fork5 {deltaFile ''}
+                        Pipe {deltaFile '', abstract true}
                                 alternative
-                                        Pipe3 {deltaFile ""}
-                                        Pipe2 {deltaFile ""}
-                                        Pipe8 {deltaFile ""}
-                        Lock {deltaFile "", abstract true}
+                                        Pipe3 {deltaFile ''}
+                                        Pipe2 {deltaFile ''}
+                                        Pipe8 {deltaFile ''}
+                        Lock {deltaFile '', abstract true}
                                 alternative
-                                        Lock2 {deltaFile ""}
-                                        Lock1 {deltaFile ""}
-                                        Lock3 {deltaFile ""}
+                                        Lock2 {deltaFile ''}
+                                        Lock1 {deltaFile ''}
+                                        Lock3 {deltaFile ''}
 
 constraints
         Lock1 => Pipe2 | Pipe3

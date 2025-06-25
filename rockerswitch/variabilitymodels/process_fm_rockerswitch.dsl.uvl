@@ -106,3 +106,26 @@ constraints
         PressCrossover => PressChangeover2
         PressPole1_1 => InsertPole1_1
         PressPole1_2 => InsertPole1_2
+
+visibility-constraints
+        PressOff1_4 vif InsertOff1_4
+        PressOff1_3 vif InsertOff1_3
+        PressOff1_2 vif InsertOff1_2
+        ScrewScrew1_2 vif InsertScrew1_2 & InsertO_Ring1_2 & InsertClaw1_2
+        ScrewScrew1_1 vif InsertScrew1_1 & InsertO_Ring1_1 & InsertClaw1_1
+        PressRocker2_1 vif InsertRocker2_1 & PressPole2_1
+        PressOff1_1 vif InsertOff1_1
+        PressRocker2_2 vif InsertRocker2_2 & PressPole2_2
+        PressChangeover2 vif InsertChangeover2 & PressRocker1_2
+        PressChangeover1 vif InsertChangeover1
+        PressPole2_2 vif InsertPole2_2
+        PressNeutral1_2 vif InsertNeutral1_2
+        PressPole2_1 vif InsertPole2_1
+        PressNeutral1_1 vif InsertNeutral1_1
+        PressRocker1_2 vif InsertRocker1_2 & PressNeutral1_2
+        PressRocker1_1 vif InsertRocker1_1 & PressNeutral1_1
+        InsertClaw1_1 vif InsertO_Ring1_1
+        PressSeries vif InsertSeries & PressRocker1_1 & PressRocker1_2
+        PressCrossover vif InsertCrossover & PressRocker1_1 & PressChangeover2
+        PressPole1_1 vif InsertPole1_1
+        PressPole1_2 vif InsertPole1_2

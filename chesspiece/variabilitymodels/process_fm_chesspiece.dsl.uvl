@@ -30,3 +30,14 @@ constraints
         InsertBase => TurnBase
         ScrewBase => InsertBase
         ScrewBase => InsertRod
+
+visibility-constraints
+        CutAluminumBar vif LoadAluminumBar
+        CarveReamings_one vif CutAluminumBar
+        CarveReamings_two vif CutAluminumBar
+        TurnBase vif CutAluminumBar
+        InsertBase vif TurnBase & CarveReamings
+        ScrewBase vif InsertBase & InsertRod
+        InsertBody vif PrintBody
+        ScrewBody vif InsertBody & InsertRod
+        PrintBody vif InsertPLA

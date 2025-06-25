@@ -68,3 +68,13 @@ constraints
         WeldBarrel1_1 => PressBarrel1_1
         PressRing1 => InsertRing1
         PressRing1 => PressJack1
+
+visibility-constraints
+        WeldLock vif InsertLock1 | InsertLock2 | InsertLock3
+        PressBarrel vif InsertBarrel1_1 | InsertBarrel1_2
+        WeldBarrel vif PressBarrel1_1 | PressBarrel1_2
+        PressRing1 vif InsertRing1 & PressJack1
+        PressJack1 vif InsertJack1
+        WeldJack1 vif PressJack1
+        ScrewScrew vif InsertScrew
+        PressORing vif InsertORing & InsertRing1 & InsertJack1 & PressRing1 & PressJack1
