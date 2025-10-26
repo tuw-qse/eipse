@@ -1,5 +1,7 @@
+namespace chesspiece_product
+
 features
-        chesspieces_new_product {extended__ true, abstract true}
+        chesspieces_product {extended__ true, abstract true}
                 mandatory
                         Base {abstract true}
                                 alternative
@@ -25,23 +27,13 @@ features
                         AluminumBar
 
 constraints
-        Pawn_body => !Queen_body
-        Pawn_body => !King_body
-        Rook_body => !Queen_body
-        Rook_body => !King_body
-        Knight_body => !Queen_body
-        Knight_body => !King_body
-        King_body => !Knight_body
-        King_body => !Bishop_body
-        King_body => !Pawn_body
-        King_body => !Rook_body
-        Bishop_body => !Queen_body
-        Bishop_body => !King_body
-        Queen_body => !Knight_body
-        Queen_body => !Bishop_body
-        Queen_body => !Pawn_body
-        Queen_body => !Rook_body
         Body_minor => Base_onestrip
         Body_major => Base_twostrip
         Body_minor => Rod_short
         Body_major => Rod_long
+
+visibility-constraints
+        Rod_short vif Body_minor
+        Rod_long vif Body_major
+        Base_onestrip vif Body_minor
+        Base_twostrip vif Body_major
