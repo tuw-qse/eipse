@@ -51,23 +51,22 @@ constraints
 	InsertPipe3 => !InsertBarrel1_2
 
 visibility-constraints
+	InsertBarrel1_2 vif InsertPipe2 | InsertPipe8
 	PressBarrel1_1 vif InsertBarrel1_1 & InsertPipe
 	PressBarrel1_2 vif InsertBarrel1_2 & InsertPipe
 	WeldBarrel1_1 vif PressBarrel1_1
-	WeldBarrel1_2 vif PressBarrel1_2 & InsertPipe & WeldFork5
+	WeldBarrel1_2 vif PressBarrel1_2
 	WeldFork5 vif InsertFork5 & (InsertPipe2 | InsertPipe3 | InsertPipe8)
-	WeldLock1 vif InsertLock1 & InsertPipe & WeldFork3 & WeldFork4
-	WeldLock2 vif InsertLock2 & InsertPipe & WeldFork3 & WeldFork4
-	WeldLock3 vif InsertLock3 & InsertPipe & WeldFork3 & WeldFork4
+	InsertLock3 vif InsertPipe8
+	InsertLock2 vif InsertPipe3
+	InsertLock1 vif InsertPipe2 | InsertPipe3
+	WeldLock1 vif InsertLock1 & WeldFork3 & WeldFork4
+	WeldLock2 vif InsertLock2 & WeldFork3 & WeldFork4
+	WeldLock3 vif InsertLock3 & WeldFork3 & WeldFork4
 	WeldJack1 vif InsertJack1 & InsertPipe
 	PressRing1 vif InsertRing1 & InsertPipe
-	ScrewScrew vif InsertScrew & InsertPipe
-	PressORing vif InsertORing & InsertPipe
 	WeldFork3 vif InsertFork3 & InsertPipe & WeldFork5
 	WeldFork4 vif InsertFork4 & InsertPipe & WeldFork5
-	WeldLock1 vif InsertLock1 & InsertPipe & WeldFork3 & WeldFork4
-	WeldLock2 vif InsertLock2 & InsertPipe & WeldFork3 & WeldFork4
-	WeldLock3 vif InsertLock3 & InsertPipe & WeldFork3 & WeldFork4
 	WeldJack1 vif InsertJack1 & InsertPipe
 	PressRing1 vif InsertRing1 & InsertPipe
 	PressORing vif InsertORing & PressRing1 & WeldJack1
